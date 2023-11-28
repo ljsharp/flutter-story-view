@@ -1,7 +1,6 @@
 import 'dart:async';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_story_view/widgets/story_text.dart';
 import 'package:intl/intl.dart';
 import 'package:video_player/video_player.dart';
 import 'package:flutter_story_view/models/story_item.dart';
@@ -348,7 +347,7 @@ class _FlutterStoryViewState extends State<FlutterStoryView>
           child: Container(
             height: 100,
             padding: const EdgeInsets.only(left: 10, right: 10, top: 40),
-            color: Colors.black,
+            color: Colors.transparent,
             child: Column(
               children: [
                 const SizedBox(
@@ -549,7 +548,7 @@ class _FlutterStoryViewState extends State<FlutterStoryView>
           child: Container(
             height: 100,
             width: double.infinity,
-            color: Colors.black,
+            color: Colors.transparent,
             padding: const EdgeInsets.only(top: 10),
             child: Column(
               children: [
