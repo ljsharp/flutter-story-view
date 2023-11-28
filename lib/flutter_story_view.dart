@@ -286,7 +286,7 @@ class _FlutterStoryViewState extends State<FlutterStoryView>
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.black,
+      color: Colors.transparent,
       child: GestureDetector(
         child: Stack(
           children: [
@@ -350,72 +350,72 @@ class _FlutterStoryViewState extends State<FlutterStoryView>
             color: Colors.transparent,
             child: Column(
               children: [
-                const SizedBox(
-                  height: 5,
-                ),
-                const SizedBox(
-                  height: 5,
-                ),
+                // const SizedBox(
+                //   height: 5,
+                // ),
+                // const SizedBox(
+                //   height: 5,
+                // ),
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    if (widget.showBackIcon != null && widget.showBackIcon!)
-                      GestureDetector(
-                        onTap: widget.onComplete,
-                        child: const Icon(
-                          Icons.arrow_back,
-                        ),
-                      ),
-                    if (widget.userInfo != null) ...[
-                      const SizedBox(
-                        width: 10,
-                      ),
-                      if (widget.userInfo!.profileUrl != null)
-                        Container(
-                          width: 45,
-                          height: 45,
-                          child: ClipRRect(
-                            borderRadius: BorderRadius.circular(30),
-                            child: CachedNetworkImage(
-                              imageUrl: widget.userInfo!.profileUrl!,
-                              fit: BoxFit.cover,
-                            ),
-                          ),
-                        ),
-                      const SizedBox(
-                        width: 10,
-                      ),
-                      Expanded(
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            if (widget.userInfo!.username != null) ...[
-                              Text(
-                                widget.userInfo!.username!,
-                                style: const TextStyle(fontSize: 16),
-                              ),
-                              const SizedBox(
-                                height: 2,
-                              ),
-                            ],
-                          ],
-                        ),
-                      ),
-                    ] else
-                      Expanded(child: Container()),
-                    if (widget.createdAt != null)
-                      Text(
-                        DateFormat.jm().format(widget.createdAt!),
-                        style: const TextStyle(color: Colors.grey),
-                      ),
-                    if (widget.showMenuIcon != null && widget.showMenuIcon!)
-                      GestureDetector(
-                        onTap: widget.onMenuTapListener,
-                        child: const Icon(
-                          Icons.more_vert,
-                        ),
-                      )
+                    // if (widget.showBackIcon != null && widget.showBackIcon!)
+                    //   GestureDetector(
+                    //     onTap: widget.onComplete,
+                    //     child: const Icon(
+                    //       Icons.arrow_back,
+                    //     ),
+                    //   ),
+                    // if (widget.userInfo != null) ...[
+                    //   const SizedBox(
+                    //     width: 10,
+                    //   ),
+                    //   if (widget.userInfo!.profileUrl != null)
+                    //     Container(
+                    //       width: 45,
+                    //       height: 45,
+                    //       child: ClipRRect(
+                    //         borderRadius: BorderRadius.circular(30),
+                    //         child: CachedNetworkImage(
+                    //           imageUrl: widget.userInfo!.profileUrl!,
+                    //           fit: BoxFit.cover,
+                    //         ),
+                    //       ),
+                    //     ),
+                    //   const SizedBox(
+                    //     width: 10,
+                    //   ),
+                    //   Expanded(
+                    //     child: Column(
+                    //       mainAxisAlignment: MainAxisAlignment.center,
+                    //       crossAxisAlignment: CrossAxisAlignment.start,
+                    //       children: [
+                    //         if (widget.userInfo!.username != null) ...[
+                    //           Text(
+                    //             widget.userInfo!.username!,
+                    //             style: const TextStyle(fontSize: 16),
+                    //           ),
+                    //           const SizedBox(
+                    //             height: 2,
+                    //           ),
+                    //         ],
+                    //       ],
+                    //     ),
+                    //   ),
+                    // ] else
+                    //   Expanded(child: Container()),
+                    // if (widget.createdAt != null)
+                    //   Text(
+                    //     DateFormat.jm().format(widget.createdAt!),
+                    //     style: const TextStyle(color: Colors.grey),
+                    //   ),
+                    // if (widget.showMenuIcon != null && widget.showMenuIcon!)
+                    //   GestureDetector(
+                    //     onTap: widget.onMenuTapListener,
+                    //     child: const Icon(
+                    //       Icons.more_vert,
+                    //     ),
+                    //   )
                   ],
                 ),
               ],
@@ -559,24 +559,24 @@ class _FlutterStoryViewState extends State<FlutterStoryView>
                         widget.caption!,
                       ),
                     ),
-                if (widget.showReplyButton != null &&
-                    widget.showReplyButton!) ...[
-                  InkWell(
-                    onTap: widget.onReplyTap,
-                    child: Column(
-                      children: [
-                        const Icon(Icons.keyboard_arrow_up),
-                        const SizedBox(
-                          height: 3,
-                        ),
-                        Text(widget.replyButtonText!),
-                      ],
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 10,
-                  ),
-                ]
+                // if (widget.showReplyButton != null &&
+                //     widget.showReplyButton!) ...[
+                //   InkWell(
+                //     onTap: widget.onReplyTap,
+                //     child: Column(
+                //       children: [
+                //         const Icon(Icons.keyboard_arrow_up),
+                //         const SizedBox(
+                //           height: 3,
+                //         ),
+                //         Text(widget.replyButtonText!),
+                //       ],
+                //     ),
+                //   ),
+                //   const SizedBox(
+                //     height: 10,
+                //   ),
+                // ]
               ],
             ),
           ),

@@ -27,12 +27,28 @@ class _StoryVideoState extends State<StoryVideo> {
         children: [
           if (widget.controller != null &&
               widget.controller!.value.isInitialized)
-            Center(
-              child: AspectRatio(
-                aspectRatio: widget.controller!.value.aspectRatio,
-                child: VideoPlayer(widget.controller!),
+            // Center(
+            //   child: AspectRatio(
+            //     aspectRatio: 0.5,
+            //     child: VideoPlayer(widget.controller!),
+            //   ),
+            // ),
+            SizedBox.expand(
+              child: FittedBox(
+                fit: BoxFit.cover,
+                child: SizedBox(
+                  width: widget.controller!.value.size.width,
+                  height: widget.controller!.value.size.height,
+                  child: VideoPlayer(widget.controller!),
+                ),
               ),
             ),
+          Positioned(
+            bottom: 0,
+            left: 0,
+            right: 0,
+            child: Center(child: Text("Center the world")),
+          ),
         ],
       ),
     );
